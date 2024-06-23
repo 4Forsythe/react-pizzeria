@@ -1,0 +1,39 @@
+.root {
+  margin-bottom: 48px;
+  h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .list {
+    gap: 30px;
+    row-gap: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1064px) {
+  .root {
+    .list {
+      column-gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .root {
+    .list {
+      column-gap: 12px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 540px) {
+  .root {
+    .list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
